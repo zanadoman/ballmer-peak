@@ -52,7 +52,7 @@ public partial class Player : CharacterBody2D
 		if (!IsOnFloor())
 		{
 			velocity.Y += Gravity * (float)delta;
-			_sprite.Play(velocity.Y < 0 ? "dump" : "fall");
+			_sprite.Play(velocity.Y < 0 ? "jump" : "fall");
 		}
 		else if (Input.IsActionJustPressed("Jump"))
 		{

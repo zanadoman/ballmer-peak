@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://bdyonwcbxfdsd"]
+[gd_scene load_steps=2 format=3 uid="uid://bdyonwcbxfdsd"]
+
+[ext_resource type="Texture2D" uid="uid://s4q47v8fd18o" path="res://sprites/player/idle/1.png" id="1_3vyb7"]
 
 [node name="Player" type="Node2D"]
+
+[node name="Texture" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_3vyb7")

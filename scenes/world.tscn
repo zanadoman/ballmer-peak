@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckhq0gwkswf4h"]
+
+[ext_resource type="Texture2D" uid="uid://b1mhll0bvw4lr" path="res://world/ballmer-peak.jpg" id="1_nnsk1"]
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(59.652496, 32.75)
+scale = Vector2(4.470313, 4.4703126)
+texture = ExtResource("1_nnsk1")

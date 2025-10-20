@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://cno2dhr8ain3w"]
+
+[ext_resource type="Texture2D" uid="uid://dyvd7umlcqtof" path="res://sprites/menu/bkg.png" id="1_0ykhv"]
+[ext_resource type="Script" uid="uid://b0bmv3ab6t52q" path="res://scripts/Menu.cs" id="2_2wh52"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Bkg" type="Sprite2D" parent="."]
+position = Vector2(540.8, 141.5)
+scale = Vector2(1.2636364, 1.2636364)
+texture = ExtResource("1_0ykhv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_2wh52")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -94.0
+offset_right = 262.0
+offset_bottom = 107.0
+text = "Start
+"
+
+[node name="Camera2D" type="Camera2D" parent="Control"]
+position = Vector2(537, 120)

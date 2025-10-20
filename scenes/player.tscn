@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bdyonwcbxfdsd"]
+[gd_scene load_steps=10 format=3 uid="uid://bdyonwcbxfdsd"]
 
 [ext_resource type="Texture2D" uid="uid://s4q47v8fd18o" path="res://sprites/player/idle/1.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bc3gnqua52f8e" path="res://scripts/Player.cs" id="1_fjrip"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://dryr32puac7jc" path="res://sprites/player/idle/4.png" id="5_ur7pv"]
 [ext_resource type="Texture2D" uid="uid://14mqkhax7x6p" path="res://sprites/player/idle/5.png" id="6_y4r1p"]
 [ext_resource type="Texture2D" uid="uid://bri6oxuquoj7u" path="res://sprites/player/idle/6.png" id="7_d2wvv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fjrip"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3v2ag"]
 animations = [{
@@ -34,9 +36,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="Node2D"]
+[node name="Player" type="CharacterBody2D"]
 scale = Vector2(5, 5)
 script = ExtResource("1_fjrip")
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_fjrip")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://hh7lmi184r0q"]
+[gd_scene load_steps=4 format=3 uid="uid://hh7lmi184r0q"]
 
 [ext_resource type="Texture2D" uid="uid://cyjd06ry2vv84" path="res://sprites/platforms/platform.png" id="1_axdvg"]
+[ext_resource type="Script" uid="uid://kqp3y07uk1io" path="res://scripts/Platform.cs" id="1_motb6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_motb6"]
 size = Vector2(99.000015, 76.92309)
 
 [node name="Platform" type="Node2D"]
+script = ExtResource("1_motb6")
 
 [node name="Platform" type="Sprite2D" parent="."]
 position = Vector2(-86, 46)

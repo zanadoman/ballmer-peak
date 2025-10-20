@@ -51,3 +51,17 @@ sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"idle"
 
 [node name="Camera" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -23.200005
+offset_top = 42.0
+offset_right = 100.799995
+offset_bottom = 65.0
+text = "Blood Alcohol %"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -121.00001
+offset_top = -63.999992
+offset_right = 19.999992
+offset_bottom = -40.999992
+text = "Programming skill"

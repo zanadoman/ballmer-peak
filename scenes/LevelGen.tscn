@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ie4t1verq05"]
+
+[ext_resource type="Script" uid="uid://xt58tonrkwjr" path="res://scripts/LevelGen.cs" id="1_ehlpx"]
+[ext_resource type="PackedScene" uid="uid://hh7lmi184r0q" path="res://scenes/Platform.tscn" id="2_t5vow"]
+
+[node name="LevelGen" type="Node2D"]
+script = ExtResource("1_ehlpx")
+PlatformScene = ExtResource("2_t5vow")

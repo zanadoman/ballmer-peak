@@ -1,10 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://duffj1pmq2pca"]
+[gd_scene load_steps=5 format=3 uid="uid://ckhq0gwkswf4h"]
 
 [ext_resource type="Texture2D" uid="uid://b1mhll0bvw4lr" path="res://world/ballmer-peak.jpg" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://bdyonwcbxfdsd" path="res://scenes/player.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://c0ie4t1verq05" path="res://scenes/LevelGen.tscn" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://hh7lmi184r0q" path="res://scenes/Platform.tscn" id="4_k0juu"]
 
 [node name="World" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(59.652496, 32.75)
+position = Vector2(54.000004, 27)
 scale = Vector2(4.470313, 4.4703126)
 texture = ExtResource("1_nnsk1")
+
+[node name="Player" parent="." instance=ExtResource("2_rwgxs")]
+position = Vector2(-498.99997, -40.999996)
+
+[node name="LevelGen" parent="." instance=ExtResource("3_4wyf3")]
+PlatformCount = 2010
+MinX = -600.0
+GapMin = 52.42
+
+[node name="Platform" parent="." instance=ExtResource("4_k0juu")]
+position = Vector2(-414, 1)

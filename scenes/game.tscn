@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkjo64t6b245q"]
+[gd_scene load_steps=4 format=3 uid="uid://c568l3pwkwmg6"]
 
 [ext_resource type="PackedScene" uid="uid://bdyonwcbxfdsd" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b1mhll0bvw4lr" path="res://world/ballmer-peak.jpg" id="2_yqjtg"]

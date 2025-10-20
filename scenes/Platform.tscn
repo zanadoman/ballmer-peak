@@ -20,3 +20,4 @@ scale = Vector2(0.99999994, 0.99999994)
 position = Vector2(-85.500015, 71.461555)
 scale = Vector2(1, 0.99999994)
 shape = SubResource("RectangleShape2D_motb6")
+one_way_collision = true

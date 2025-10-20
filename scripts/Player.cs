@@ -37,15 +37,6 @@ public partial class Player : CharacterBody2D
 			velocity.X = 0;
 		}
 		
-		if (!IsOnFloor())
-		{
-			velocity.Y += Gravity * (float)delta;
-		}
-		else if (Input.IsActionJustPressed("Jump"))
-		{
-			velocity.Y = -JumpStrength;
-		}
-		
 		Velocity = velocity;
 		MoveAndSlide();
 	}

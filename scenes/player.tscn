@@ -49,3 +49,5 @@ texture_filter = 1
 scale = Vector2(0.99999994, 0.99999994)
 sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"idle"
+
+[node name="Camera" type="Camera2D" parent="."]

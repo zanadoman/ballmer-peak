@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ballmer Peak"
-run/main_scene="uid://bdyonwcbxfdsd"
+run/main_scene="uid://dkjo64t6b245q"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 

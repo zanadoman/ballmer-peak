@@ -19,6 +19,6 @@ shape = SubResource("RectangleShape2D_uwrxv")
 
 [node name="BallmerPeak" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(490.00006, 348)
+position = Vector2(559, 355.00003)
 scale = Vector2(1.8586777, 2.2)
 texture = ExtResource("2_yqjtg")

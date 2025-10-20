@@ -1,3 +1,4 @@
+
 using Godot;
 using System;
 
@@ -22,10 +23,13 @@ public partial class Player : CharacterBody2D
 	
 	private AnimatedSprite2D _sprite;
 	
+	private Label _heightLabel;
+	
 	public override void _Ready()
 	{
 		_sprite = GetNode<AnimatedSprite2D>("Sprite");
 		_sprite.Play("idle");
+		_heightLabel = GetNode<Label>("./Label");
 	}
 
 	public override void _Process(double delta)
@@ -66,5 +70,13 @@ public partial class Player : CharacterBody2D
 		
 		Velocity = velocity;
 		MoveAndSlide();
+		
+		if (_heightLabel != null)
+		{
+			_heightLabel.Text = $"Height: {Position.Y:F2}";
+		}
+		else{
+			GD.Print($"Label is null");
+		}
 	}
 }

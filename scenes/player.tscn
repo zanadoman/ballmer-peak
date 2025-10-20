@@ -116,10 +116,10 @@ animation = &"run"
 [node name="Camera" type="Camera2D" parent="."]
 
 [node name="Label" type="Label" parent="."]
-offset_left = -23.200005
-offset_top = 42.0
-offset_right = 100.799995
-offset_bottom = 65.0
+offset_left = -105.399994
+offset_top = 42.8
+offset_right = 18.600006
+offset_bottom = 65.8
 text = "Blood Alcohol %"
 
 [node name="Label2" type="Label" parent="."]

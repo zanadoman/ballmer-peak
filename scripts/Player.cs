@@ -73,7 +73,10 @@ public partial class Player : CharacterBody2D
 		
 		if (_heightLabel != null)
 		{
-			_heightLabel.Text = $"Height: {Position.Y:F2}";
+			float value = -(float)Position.Y;
+			value += 539;
+			value /= 100;
+			_heightLabel.Text = $"Blood Alcohol%: {value:F2}";
 		}
 		else{
 			GD.Print($"Label is null");
